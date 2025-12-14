@@ -4,7 +4,6 @@ End-to-end MLOps project for predicting NBA rookie career longevity.
 
 ---
 
-```markdown
 # 🏀 NBA Career Longevity Prediction  
 **A Clean Architecture Machine Learning Project**
 
