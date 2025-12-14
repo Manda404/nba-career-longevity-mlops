@@ -151,4 +151,4 @@ def run_training(
 
     app_logger.success("✅ Training pipeline completed successfully")
 
-    return model
+    return model, valid_rows
