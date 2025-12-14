@@ -36,3 +36,4 @@ dev
 reports
 data/processed
 .env
+catboost_info

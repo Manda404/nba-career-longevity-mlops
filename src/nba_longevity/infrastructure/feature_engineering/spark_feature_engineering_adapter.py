@@ -1,8 +1,8 @@
 from pyspark.sql.functions import col
 
-from domain.ports.feature_engineering_port import FeatureEngineeringPort
-from domain.features.feature_contract import FEATURE_COLUMNS
-from infrastructure.dataset.spark_dataset import SparkDataset
+from nba_longevity.domain.ports.feature_engineering_port import FeatureEngineeringPort
+from nba_longevity.domain.features.feature_contract import FEATURE_COLUMNS
+from nba_longevity.infrastructure.dataset.spark_dataset import SparkDataset
 
 
 class SparkFeatureEngineeringAdapter(FeatureEngineeringPort):

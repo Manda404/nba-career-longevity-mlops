@@ -1,6 +1,7 @@
 from pandas import DataFrame
-from nba_longevity.domain.ports.feature_selection_port import FeatureSelectionPort
 from nba_longevity.domain.dataset.dataset import Dataset
+from nba_longevity.application.bootstrap import app_logger
+from nba_longevity.domain.ports.feature_selection_port import FeatureSelectionPort
 from nba_longevity.infrastructure.dataset.pandas_dataset import PandasDataset
 from nba_longevity.domain.features.feature_spaces import (
     FEATURE_SPACE_MINIMAL,
@@ -40,33 +41,43 @@ class PandasFeatureSelectionAdapter(FeatureSelectionPort):
         """
         self.feature_space = feature_space or FEATURE_SPACE_EXTENDED
 
+        app_logger.info(
+            f"FeatureSelection initialisé avec "
+            f"{len(self.feature_space)} features"
+        )
+
+        app_logger.debug(
+            f"Espace de features sélectionné : {self.feature_space}"
+        )
+
     def select_features(self, dataset: Dataset) -> Dataset:
         """
         Sélectionne l’espace de features final du modèle.
-
-        Parameters
-        ----------
-        dataset : Dataset
-            Dataset enrichi contenant :
-            - les features brutes
-            - les features dérivées
-            - la colonne cible
-
-        Returns
-        -------
-        Dataset
-            Nouveau Dataset ne contenant que :
-            - les features sélectionnées
-            - la colonne cible
-
-        Notes
-        -----
-        - Cette méthode garantit l’alignement train / inference.
-        - Toute feature non sélectionnée est volontairement exclue
-          du modèle afin d’éviter la redondance, le bruit ou le leakage.
         """
+        app_logger.info("🎯 Démarrage de la sélection des features")
+
+        # Conversion Dataset -> DataFrame
         df = DataFrame(list(dataset))
+        app_logger.debug(
+            f"Dataset d’entrée : {df.shape[0]} lignes, {df.shape[1]} colonnes"
+        )
 
         selected_cols = self.feature_space + [TARGET_COLUMN]
+
+        # Vérification de sécurité
+        missing_cols = set(selected_cols) - set(df.columns)
+        if missing_cols:
+            app_logger.error(
+                f"Colonnes manquantes lors de la sélection : {missing_cols}"
+            )
+            raise ValueError(f"Colonnes manquantes : {missing_cols}")
+
+        app_logger.info(
+            f"{len(self.feature_space)} features sélectionnées + colonne cible"
+        )
+
+        app_logger.debug(
+            f"Colonnes finales utilisées par le modèle : {selected_cols}"
+        )
 
         return PandasDataset(df[selected_cols])

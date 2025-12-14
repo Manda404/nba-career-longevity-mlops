@@ -160,7 +160,7 @@ The `infrastructure/` layer contains **pure technical implementations**:
 
 infrastructure/
 ├─ dataset/        # CSV loaders
-├─ preprocessing/ # Pandas-based preprocessing
+├─ preprocessing/  # Pandas-based preprocessing
 ├─ features/       # Pandas feature engineering
 ├─ training/       # ML model implementations
 ├─ tracking/       # MLflow adapter
@@ -266,5 +266,3 @@ This project is designed as:
 
 If you work in Data Science, ML Engineering, or MLOps, this repository aims to reflect **how ML systems should be built in production**, not just in notebooks.
 ```
-
----

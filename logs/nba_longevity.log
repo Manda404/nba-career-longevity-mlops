@@ -33,3 +33,118 @@
 2025-12-14 20:03:32 | INFO | nba_career_longevity | local | csv_dataset_loader:load:25 | CSV loaded successfully | rows=1340 | cols=21
 2025-12-14 20:04:35 | INFO | nba_career_longevity | local | csv_dataset_loader:load:21 | Loading CSV dataset from path: /Users/surelmanda/Downloads/nba-career-longevity-mlops/data/raw/nba_players.csv
 2025-12-14 20:04:35 | INFO | nba_career_longevity | local | csv_dataset_loader:load:25 | CSV loaded successfully | rows=1340 | cols=21
+2025-12-14 21:22:14 | INFO | nba_career_longevity | local | csv_dataset_loader:load:21 | Loading CSV dataset from path: /Users/surelmanda/Downloads/nba-career-longevity-mlops/data/raw/nba_players.csv
+2025-12-14 21:22:14 | INFO | nba_career_longevity | local | csv_dataset_loader:load:25 | CSV loaded successfully | rows=1340 | cols=21
+2025-12-14 21:22:14 | INFO | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:19 | Démarrage du feature engineering (Pandas)
+2025-12-14 21:22:14 | DEBUG | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:23 | Dataset chargé avec 1340 lignes et 21 colonnes
+2025-12-14 21:22:14 | INFO | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:30 | Création des features d'usage et d'efficacité
+2025-12-14 21:22:14 | INFO | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:40 | Création des features d'impact collectif
+2025-12-14 21:22:14 | DEBUG | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:46 | Features créées : PointsPerMinute, FieldGoalEfficiency, ThreePointRate, FreeThrowRate, AssistToTurnoverRatio, ReboundRate, DefensiveImpact
+2025-12-14 21:22:14 | INFO | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:52 | Feature engineering terminé avec succès
+2025-12-14 21:22:14 | INFO | nba_career_longevity | local | pandas_feature_selection_adapter:__init__:44 | FeatureSelection initialisé avec 9 features
+2025-12-14 21:22:14 | DEBUG | nba_career_longevity | local | pandas_feature_selection_adapter:__init__:49 | Espace de features sélectionné : ['PointsPerMinute', 'FieldGoalEfficiency', 'ThreePointRate', 'FreeThrowRate', 'AssistToTurnoverRatio', 'ReboundRate', 'DefensiveImpact', 'MinutesPerGame', 'GamesPlayed']
+2025-12-14 21:22:14 | INFO | nba_career_longevity | local | pandas_feature_selection_adapter:select_features:57 | 🎯 Démarrage de la sélection des features
+2025-12-14 21:22:14 | DEBUG | nba_career_longevity | local | pandas_feature_selection_adapter:select_features:61 | Dataset d’entrée : 1340 lignes, 28 colonnes
+2025-12-14 21:22:14 | INFO | nba_career_longevity | local | pandas_feature_selection_adapter:select_features:75 | 9 features sélectionnées + colonne cible
+2025-12-14 21:22:14 | DEBUG | nba_career_longevity | local | pandas_feature_selection_adapter:select_features:79 | Colonnes finales utilisées par le modèle : ['PointsPerMinute', 'FieldGoalEfficiency', 'ThreePointRate', 'FreeThrowRate', 'AssistToTurnoverRatio', 'ReboundRate', 'DefensiveImpact', 'MinutesPerGame', 'GamesPlayed', 'Target5Years']
+2025-12-14 21:23:10 | INFO | nba_career_longevity | local | csv_dataset_loader:load:21 | Loading CSV dataset from path: /Users/surelmanda/Downloads/nba-career-longevity-mlops/data/raw/nba_players.csv
+2025-12-14 21:23:10 | INFO | nba_career_longevity | local | csv_dataset_loader:load:25 | CSV loaded successfully | rows=1340 | cols=21
+2025-12-14 21:23:10 | INFO | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:19 | Démarrage du feature engineering (Pandas)
+2025-12-14 21:23:10 | DEBUG | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:23 | Dataset chargé avec 1340 lignes et 21 colonnes
+2025-12-14 21:23:10 | INFO | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:30 | Création des features d'usage et d'efficacité
+2025-12-14 21:23:10 | INFO | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:40 | Création des features d'impact collectif
+2025-12-14 21:23:10 | DEBUG | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:46 | Features créées : PointsPerMinute, FieldGoalEfficiency, ThreePointRate, FreeThrowRate, AssistToTurnoverRatio, ReboundRate, DefensiveImpact
+2025-12-14 21:23:10 | INFO | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:52 | Feature engineering terminé avec succès
+2025-12-14 21:23:10 | INFO | nba_career_longevity | local | pandas_feature_selection_adapter:__init__:44 | FeatureSelection initialisé avec 9 features
+2025-12-14 21:23:10 | DEBUG | nba_career_longevity | local | pandas_feature_selection_adapter:__init__:49 | Espace de features sélectionné : ['PointsPerMinute', 'FieldGoalEfficiency', 'ThreePointRate', 'FreeThrowRate', 'AssistToTurnoverRatio', 'ReboundRate', 'DefensiveImpact', 'MinutesPerGame', 'GamesPlayed']
+2025-12-14 21:23:10 | INFO | nba_career_longevity | local | pandas_feature_selection_adapter:select_features:57 | 🎯 Démarrage de la sélection des features
+2025-12-14 21:23:10 | DEBUG | nba_career_longevity | local | pandas_feature_selection_adapter:select_features:61 | Dataset d’entrée : 1340 lignes, 28 colonnes
+2025-12-14 21:23:10 | INFO | nba_career_longevity | local | pandas_feature_selection_adapter:select_features:75 | 9 features sélectionnées + colonne cible
+2025-12-14 21:23:10 | DEBUG | nba_career_longevity | local | pandas_feature_selection_adapter:select_features:79 | Colonnes finales utilisées par le modèle : ['PointsPerMinute', 'FieldGoalEfficiency', 'ThreePointRate', 'FreeThrowRate', 'AssistToTurnoverRatio', 'ReboundRate', 'DefensiveImpact', 'MinutesPerGame', 'GamesPlayed', 'Target5Years']
+2025-12-14 21:27:34 | INFO | nba_career_longevity | local | csv_dataset_loader:load:21 | Loading CSV dataset from path: /Users/surelmanda/Downloads/nba-career-longevity-mlops/data/raw/nba_players.csv
+2025-12-14 21:27:34 | INFO | nba_career_longevity | local | csv_dataset_loader:load:25 | CSV loaded successfully | rows=1340 | cols=21
+2025-12-14 21:27:34 | INFO | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:19 | Démarrage du feature engineering (Pandas)
+2025-12-14 21:27:34 | DEBUG | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:23 | Dataset chargé avec 1340 lignes et 21 colonnes
+2025-12-14 21:27:34 | INFO | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:30 | Création des features d'usage et d'efficacité
+2025-12-14 21:27:34 | INFO | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:40 | Création des features d'impact collectif
+2025-12-14 21:27:34 | DEBUG | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:46 | Features créées : PointsPerMinute, FieldGoalEfficiency, ThreePointRate, FreeThrowRate, AssistToTurnoverRatio, ReboundRate, DefensiveImpact
+2025-12-14 21:27:34 | INFO | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:52 | Feature engineering terminé avec succès
+2025-12-14 21:27:34 | INFO | nba_career_longevity | local | pandas_feature_selection_adapter:__init__:44 | FeatureSelection initialisé avec 9 features
+2025-12-14 21:27:34 | DEBUG | nba_career_longevity | local | pandas_feature_selection_adapter:__init__:49 | Espace de features sélectionné : ['PointsPerMinute', 'FieldGoalEfficiency', 'ThreePointRate', 'FreeThrowRate', 'AssistToTurnoverRatio', 'ReboundRate', 'DefensiveImpact', 'MinutesPerGame', 'GamesPlayed']
+2025-12-14 21:27:34 | INFO | nba_career_longevity | local | pandas_feature_selection_adapter:select_features:57 | 🎯 Démarrage de la sélection des features
+2025-12-14 21:27:34 | DEBUG | nba_career_longevity | local | pandas_feature_selection_adapter:select_features:61 | Dataset d’entrée : 1340 lignes, 28 colonnes
+2025-12-14 21:27:34 | INFO | nba_career_longevity | local | pandas_feature_selection_adapter:select_features:75 | 9 features sélectionnées + colonne cible
+2025-12-14 21:27:34 | DEBUG | nba_career_longevity | local | pandas_feature_selection_adapter:select_features:79 | Colonnes finales utilisées par le modèle : ['PointsPerMinute', 'FieldGoalEfficiency', 'ThreePointRate', 'FreeThrowRate', 'AssistToTurnoverRatio', 'ReboundRate', 'DefensiveImpact', 'MinutesPerGame', 'GamesPlayed', 'Target5Years']
+2025-12-14 21:27:34 | INFO | nba_career_longevity | local | xgboost_trainer:train:29 | Démarrage de l'entraînement XGBoost
+2025-12-14 21:27:34 | DEBUG | nba_career_longevity | local | xgboost_trainer:train:37 | Train shape: (1072, 10) | Valid shape: (268, 10)
+2025-12-14 21:27:34 | DEBUG | nba_career_longevity | local | xgboost_trainer:train:50 | Nombre de features utilisées: 9
+2025-12-14 21:27:34 | INFO | nba_career_longevity | local | xgboost_trainer:train:60 | DMatrix XGBoost créées
+2025-12-14 21:27:34 | INFO | nba_career_longevity | local | xgboost_trainer:train:68 | Hyperparamètres clés | num_boost_round=1000, early_stopping_rounds=50
+2025-12-14 21:27:34 | DEBUG | nba_career_longevity | local | xgboost_trainer:train:74 | Paramètres XGBoost complets : {'objective': 'binary:logistic', 'eval_metric': 'auc', 'max_depth': 4, 'eta': 0.05, 'subsample': 0.8, 'colsample_bytree': 0.8}
+2025-12-14 21:27:34 | INFO | nba_career_longevity | local | xgboost_trainer:train:91 | Entraînement terminé | best_iteration=43, best_score=0.7556697377746279
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | run_training_pipeline:run_training:49 | 🚀 Starting training pipeline | model=xgboost | feature_space=minimal
+2025-12-14 21:37:51 | DEBUG | nba_career_longevity | local | run_training_pipeline:run_training:58 | Repository root: /Users/surelmanda/Downloads/nba-career-longevity-mlops
+2025-12-14 21:37:51 | DEBUG | nba_career_longevity | local | run_training_pipeline:run_training:59 | Raw data path: /Users/surelmanda/Downloads/nba-career-longevity-mlops/data/raw/nba_players.csv
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | run_training_pipeline:run_training:67 | Using feature space with 9 features
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | run_training_pipeline:run_training:72 | 📥 Loading raw dataset
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | csv_dataset_loader:load:21 | Loading CSV dataset from path: /Users/surelmanda/Downloads/nba-career-longevity-mlops/data/raw/nba_players.csv
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | csv_dataset_loader:load:25 | CSV loaded successfully | rows=1340 | cols=21
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | run_training_pipeline:run_training:77 | 🧹 Preprocessing dataset
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | run_training_pipeline:run_training:82 | 🧠 Feature engineering (add features)
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:19 | Démarrage du feature engineering (Pandas)
+2025-12-14 21:37:51 | DEBUG | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:23 | Dataset chargé avec 1340 lignes et 21 colonnes
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:30 | Création des features d'usage et d'efficacité
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:40 | Création des features d'impact collectif
+2025-12-14 21:37:51 | DEBUG | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:46 | Features créées : PointsPerMinute, FieldGoalEfficiency, ThreePointRate, FreeThrowRate, AssistToTurnoverRatio, ReboundRate, DefensiveImpact
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:52 | Feature engineering terminé avec succès
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | run_training_pipeline:run_training:87 | 🎯 Feature selection (ML projection)
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | pandas_feature_selection_adapter:__init__:44 | FeatureSelection initialisé avec 9 features
+2025-12-14 21:37:51 | DEBUG | nba_career_longevity | local | pandas_feature_selection_adapter:__init__:49 | Espace de features sélectionné : ['PointsPerMinute', 'FieldGoalEfficiency', 'ThreePointRate', 'FreeThrowRate', 'AssistToTurnoverRatio', 'ReboundRate', 'DefensiveImpact', 'MinutesPerGame', 'GamesPlayed']
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | pandas_feature_selection_adapter:select_features:57 | 🎯 Démarrage de la sélection des features
+2025-12-14 21:37:51 | DEBUG | nba_career_longevity | local | pandas_feature_selection_adapter:select_features:61 | Dataset d’entrée : 1340 lignes, 28 colonnes
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | pandas_feature_selection_adapter:select_features:75 | 9 features sélectionnées + colonne cible
+2025-12-14 21:37:51 | DEBUG | nba_career_longevity | local | pandas_feature_selection_adapter:select_features:79 | Colonnes finales utilisées par le modèle : ['PointsPerMinute', 'FieldGoalEfficiency', 'ThreePointRate', 'FreeThrowRate', 'AssistToTurnoverRatio', 'ReboundRate', 'DefensiveImpact', 'MinutesPerGame', 'GamesPlayed', 'Target5Years']
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | run_training_pipeline:run_training:94 | ✂️ Splitting train / validation
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | run_training_pipeline:run_training:102 | Train size: 1072 | Validation size: 268
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | run_training_pipeline:run_training:108 | 🏋️ Training XGBoost model
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | xgboost_trainer:train:29 | Démarrage de l'entraînement XGBoost
+2025-12-14 21:37:51 | DEBUG | nba_career_longevity | local | xgboost_trainer:train:37 | Train shape: (1072, 10) | Valid shape: (268, 10)
+2025-12-14 21:37:51 | DEBUG | nba_career_longevity | local | xgboost_trainer:train:50 | Nombre de features utilisées: 9
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | xgboost_trainer:train:60 | DMatrix XGBoost créées
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | xgboost_trainer:train:68 | Hyperparamètres clés | num_boost_round=1000, early_stopping_rounds=50
+2025-12-14 21:37:51 | DEBUG | nba_career_longevity | local | xgboost_trainer:train:74 | Paramètres XGBoost complets : {'objective': 'binary:logistic', 'eval_metric': 'auc', 'max_depth': 4, 'eta': 0.05, 'subsample': 0.8, 'colsample_bytree': 0.8}
+2025-12-14 21:37:51 | INFO | nba_career_longevity | local | xgboost_trainer:train:91 | Entraînement terminé | best_iteration=43, best_score=0.7556697377746279
+2025-12-14 21:37:51 | SUCCESS | nba_career_longevity | local | run_training_pipeline:run_training:152 | ✅ Training pipeline completed successfully
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | run_training_pipeline:run_training:49 | 🚀 Starting training pipeline | model=catboost | feature_space=minimal
+2025-12-14 21:43:16 | DEBUG | nba_career_longevity | local | run_training_pipeline:run_training:58 | Repository root: /Users/surelmanda/Downloads/nba-career-longevity-mlops
+2025-12-14 21:43:16 | DEBUG | nba_career_longevity | local | run_training_pipeline:run_training:59 | Raw data path: /Users/surelmanda/Downloads/nba-career-longevity-mlops/data/raw/nba_players.csv
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | run_training_pipeline:run_training:67 | Using feature space with 9 features
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | run_training_pipeline:run_training:72 | 📥 Loading raw dataset
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | csv_dataset_loader:load:21 | Loading CSV dataset from path: /Users/surelmanda/Downloads/nba-career-longevity-mlops/data/raw/nba_players.csv
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | csv_dataset_loader:load:25 | CSV loaded successfully | rows=1340 | cols=21
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | run_training_pipeline:run_training:77 | 🧹 Preprocessing dataset
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | run_training_pipeline:run_training:82 | 🧠 Feature engineering (add features)
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:19 | Démarrage du feature engineering (Pandas)
+2025-12-14 21:43:16 | DEBUG | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:23 | Dataset chargé avec 1340 lignes et 21 colonnes
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:30 | Création des features d'usage et d'efficacité
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:40 | Création des features d'impact collectif
+2025-12-14 21:43:16 | DEBUG | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:46 | Features créées : PointsPerMinute, FieldGoalEfficiency, ThreePointRate, FreeThrowRate, AssistToTurnoverRatio, ReboundRate, DefensiveImpact
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | pandas_feature_engineering_adapter:add_features:52 | Feature engineering terminé avec succès
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | run_training_pipeline:run_training:87 | 🎯 Feature selection (ML projection)
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | pandas_feature_selection_adapter:__init__:44 | FeatureSelection initialisé avec 9 features
+2025-12-14 21:43:16 | DEBUG | nba_career_longevity | local | pandas_feature_selection_adapter:__init__:49 | Espace de features sélectionné : ['PointsPerMinute', 'FieldGoalEfficiency', 'ThreePointRate', 'FreeThrowRate', 'AssistToTurnoverRatio', 'ReboundRate', 'DefensiveImpact', 'MinutesPerGame', 'GamesPlayed']
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | pandas_feature_selection_adapter:select_features:57 | 🎯 Démarrage de la sélection des features
+2025-12-14 21:43:16 | DEBUG | nba_career_longevity | local | pandas_feature_selection_adapter:select_features:61 | Dataset d’entrée : 1340 lignes, 28 colonnes
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | pandas_feature_selection_adapter:select_features:75 | 9 features sélectionnées + colonne cible
+2025-12-14 21:43:16 | DEBUG | nba_career_longevity | local | pandas_feature_selection_adapter:select_features:79 | Colonnes finales utilisées par le modèle : ['PointsPerMinute', 'FieldGoalEfficiency', 'ThreePointRate', 'FreeThrowRate', 'AssistToTurnoverRatio', 'ReboundRate', 'DefensiveImpact', 'MinutesPerGame', 'GamesPlayed', 'Target5Years']
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | run_training_pipeline:run_training:94 | ✂️ Splitting train / validation
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | run_training_pipeline:run_training:102 | Train size: 1072 | Validation size: 268
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | run_training_pipeline:run_training:129 | 🏋️ Training CatBoost model
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | catboost_trainer:train:29 | Démarrage de l'entraînement CatBoost
+2025-12-14 21:43:16 | DEBUG | nba_career_longevity | local | catboost_trainer:train:37 | Train shape: (1072, 10) | Valid shape: (268, 10)
+2025-12-14 21:43:16 | DEBUG | nba_career_longevity | local | catboost_trainer:train:50 | Nombre de features utilisées: 9
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | catboost_trainer:train:60 | Pools CatBoost créés
+2025-12-14 21:43:16 | INFO | nba_career_longevity | local | catboost_trainer:train:65 | Initialisation du CatBoostClassifier
+2025-12-14 21:43:16 | DEBUG | nba_career_longevity | local | catboost_trainer:train:66 | Paramètres CatBoost : {'loss_function': 'Logloss', 'eval_metric': 'AUC', 'iterations': 2000, 'learning_rate': 0.03, 'depth': 6, 'early_stopping_rounds': 50, 'verbose': False}
+2025-12-14 21:43:17 | INFO | nba_career_longevity | local | catboost_trainer:train:86 | Entraînement terminé | best_iteration=94, best_score={'learn': {'Logloss': 0.441257232526789}, 'validation': {'Logloss': 0.5694173154911307, 'AUC': 0.7539570044885424}}
+2025-12-14 21:43:17 | SUCCESS | nba_career_longevity | local | run_training_pipeline:run_training:152 | ✅ Training pipeline completed successfully
