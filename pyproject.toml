@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "nba-career-longevity-mlops"
+version = "0.1.0"
+description = "End-to-end MLOps project: NBA rookie career longevity prediction (API + Streamlit + Postgres logging)."
+authors = ["Manda Surel <s239150.eps@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "nba_longevity", from = "src" }]
+
+# ======================================================
+# 🐍 RUNTIME DEPENDENCIES (Production)
+# ======================================================
+[tool.poetry.dependencies]
+
+# Version Python supportée
+python = "^3.10"
+
+# ------------------------------------------------------
+# 📊 Scientific computing & data manipulation
+# ------------------------------------------------------
+numpy = "^1.26.0"
+pandas = "^2.2.0"
+
+# Machine Learning utilities
+scikit-learn = "^1.4.0"
+
+# ------------------------------------------------------
+# 🤖 Machine Learning models
+# ------------------------------------------------------
+xgboost = "^2.0.0"
+catboost = "^1.2.0"
+
+# Logging
+loguru = "^0.7.0"

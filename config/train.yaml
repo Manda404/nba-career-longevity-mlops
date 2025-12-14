@@ -1,0 +1,16 @@
+# config/train.yaml
+
+training:
+  batch_size: 100000
+  early_stopping_rounds: 50
+  eval_metric: AUC
+  test_size: 0.2
+  shuffle: true
+
+cross_validation:
+  enabled: false
+  n_splits: 5
+
+logging:
+  log_to_mlflow: true
+  log_models: true

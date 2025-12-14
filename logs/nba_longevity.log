@@ -1,0 +1,35 @@
+2025-12-14 14:43:39 | INFO | nba_career_longevity | local | 2517548038:<module>:3 | Starting inference pipeline
+2025-12-14 14:50:56 | INFO | nba_career_longevity | local | csv_dataset_loader:load:21 | Loading CSV dataset from path: /Users/surelmanda/Downloads/nba-career-longevity-mlops/data/raw/nba_players.csv
+2025-12-14 14:50:56 | DEBUG | nba_career_longevity | local | csv_dataset_loader:load:25 | CSV loaded successfully | rows=1340 | cols=21
+2025-12-14 14:52:33 | INFO | nba_career_longevity | local | csv_dataset_loader:load:21 | Loading CSV dataset from path: /Users/surelmanda/Downloads/nba-career-longevity-mlops/data/raw/nba_players.csv
+2025-12-14 14:52:33 | INFO | nba_career_longevity | local | csv_dataset_loader:load:25 | CSV loaded successfully | rows=1340 | cols=21
+2025-12-14 14:53:00 | INFO | nba_career_longevity | local | csv_dataset_loader:load:21 | Loading CSV dataset from path: /Users/surelmanda/Downloads/nba-career-longevity-mlops/data/raw/nba_players.csv
+2025-12-14 14:53:00 | INFO | nba_career_longevity | local | csv_dataset_loader:load:25 | CSV loaded successfully | rows=1340 | cols=21
+2025-12-14 17:22:47 | INFO | nba_career_longevity | local | csv_dataset_loader:load:21 | Loading CSV dataset from path: /Users/surelmanda/Downloads/nba-career-longevity-mlops/data/raw/nba_players.csv
+2025-12-14 17:22:48 | INFO | nba_career_longevity | local | csv_dataset_loader:load:25 | CSV loaded successfully | rows=1340 | cols=21
+2025-12-14 17:31:45 | INFO | nba_career_longevity | local | 1699865668:<module>:4 | Analyse Summarize
+2025-12-14 17:32:19 | INFO | nba_career_longevity | local | 125027396:<module>:4 | Analyse Summarize
+2025-12-14 17:33:00 | INFO | nba_career_longevity | local | 2206473470:<module>:4 | Analyse Summarize
+2025-12-14 17:33:00 | INFO | nba_career_longevity | local | 2206473470:summarize_dataset:26 | Résumé détaillé du dataset en cours d'analyse...
+2025-12-14 17:33:18 | INFO | nba_career_longevity | local | 2174910145:<module>:4 | Analyse Summarize
+2025-12-14 17:33:18 | INFO | nba_career_longevity | local | 2174910145:summarize_dataset:26 | Résumé détaillé du dataset en cours d'analyse...
+2025-12-14 17:33:49 | INFO | nba_career_longevity | local | 45351683:<module>:4 | Analyse Summarize
+2025-12-14 17:33:49 | INFO | nba_career_longevity | local | 45351683:summarize_dataset:26 | Résumé détaillé du dataset en cours d'analyse...
+2025-12-14 17:34:43 | INFO | nba_career_longevity | local | 1995051730:<module>:4 | Analyse Summarize
+2025-12-14 17:35:50 | INFO | nba_career_longevity | local | 4030346253:<module>:4 | Analyse Summarize
+2025-12-14 17:35:50 | INFO | nba_career_longevity | local | 4030346253:summarize_dataset:26 | Résumé détaillé du dataset en cours d'analyse...
+2025-12-14 17:36:23 | INFO | nba_career_longevity | local | 3355931436:<module>:4 | Analyse Summarize
+2025-12-14 17:36:23 | INFO | nba_career_longevity | local | 3355931436:summarize_dataset:26 | Résumé détaillé du dataset en cours d'analyse...
+2025-12-14 17:39:16 | INFO | nba_career_longevity | local | 1236696816:<module>:4 | Analyse Summarize
+2025-12-14 17:39:16 | INFO | nba_career_longevity | local | 1236696816:summarize_dataset:26 | Résumé détaillé du dataset en cours d'analyse...
+2025-12-14 17:39:16 | INFO | nba_career_longevity | local | 1236696816:summarize_dataset:63 | Résumé terminé : 21 colonnes, 1340 lignes.
+2025-12-14 17:39:16 | DEBUG | nba_career_longevity | local | 1236696816:summarize_dataset:64 | Colonnes les plus incomplètes :
+%s
+2025-12-14 20:03:01 | INFO | nba_career_longevity | local | csv_dataset_loader:load:21 | Loading CSV dataset from path: /Users/surelmanda/Downloads/nba-career-longevity-mlops/data/raw/nba_players.csv
+2025-12-14 20:03:01 | INFO | nba_career_longevity | local | csv_dataset_loader:load:25 | CSV loaded successfully | rows=1340 | cols=21
+2025-12-14 20:03:11 | INFO | nba_career_longevity | local | csv_dataset_loader:load:21 | Loading CSV dataset from path: /Users/surelmanda/Downloads/nba-career-longevity-mlops/data/raw/nba_players.csv
+2025-12-14 20:03:11 | INFO | nba_career_longevity | local | csv_dataset_loader:load:25 | CSV loaded successfully | rows=1340 | cols=21
+2025-12-14 20:03:32 | INFO | nba_career_longevity | local | csv_dataset_loader:load:21 | Loading CSV dataset from path: /Users/surelmanda/Downloads/nba-career-longevity-mlops/data/raw/nba_players.csv
+2025-12-14 20:03:32 | INFO | nba_career_longevity | local | csv_dataset_loader:load:25 | CSV loaded successfully | rows=1340 | cols=21
+2025-12-14 20:04:35 | INFO | nba_career_longevity | local | csv_dataset_loader:load:21 | Loading CSV dataset from path: /Users/surelmanda/Downloads/nba-career-longevity-mlops/data/raw/nba_players.csv
+2025-12-14 20:04:35 | INFO | nba_career_longevity | local | csv_dataset_loader:load:25 | CSV loaded successfully | rows=1340 | cols=21
